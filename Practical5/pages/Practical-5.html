@@ -1,0 +1,77 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practical 5</title>
+    
+    <style>
+        body{
+            background-color: #acacac;
+        }
+        #navig-img{
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+        .grid-image{
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: auto;
+            display: block;
+        }
+        #img[usemap], map area{
+        outline: none;
+        }
+
+        #heading{
+            text-align: center;
+            color: white;
+        }
+
+        #bottom-line{
+            color: red;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container nav-div">
+<img src="../img/border (1).png" id="navig-img" alt="navigbar" usemap="#navigUsemap">
+
+<map name="navigUsemap">
+    <area shape="rect" coords="1,2, 154,84" href="../index.html" alt="Home">
+    <area shape="rect" coords="159,3, 363,85" href="../pages/Practical-1.html" alt="Practical-1">
+    <area shape="rect" coords="370,5, 571,85" href="../pages/Practical-2.html" alt="Practical-2">
+    <area shape="rect" coords="578,3, 782,85" href="../pages/Practical-3.html" alt="Practical-3">
+    <area shape="rect" coords="785,3, 989,85" href="../pages/Practical-4.html" alt="Practical-4">
+    <area shape="rect" coords="994,3, 1210,85" href="#" alt="Practical - 5">
+</map>
+</div>
+<br><br><br>
+<h1 id = heading>
+    Introduction to Front-End Technologies.
+</h1>
+<br>
+<div class="container grid-div">
+    <img src="../img/Practical-5.jpg" class="grid-image" alt="gridimage" usemap="#grid">
+
+    <map name="grid">
+        <area shape="poly" coords="53,20, 43,48, 52,150, 96,162, 138,149, 148,49, 137,22" href="html.html" alt="">
+        <area shape="circle" coords="288,92,97" href="css.html" alt="">
+        <area shape="rect" coords="24,198, 169,338" href="js.html" alt="">
+        <area shape="poly" coords="289,201, 231,223, 239,301, 288,329, 338,301, 348,222" href="bootstrap.html" alt="">
+    </map>
+</div>
+<br>
+<h3 id="bottom-line"> Click on any part of logo to know about these technologies. </h3>
+
+</body>
+</html>
