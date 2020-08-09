@@ -4,201 +4,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical-7</title>
-    <style>
 
+    <style>
         body{
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .container{
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
-            font-size: 20px;
+            font-size: 38px;
+            width: auto;
+            margin-left: 8px;
+            margin-right: 8px;
+            
+        
         }
         #header{
-            padding: 30px;
-            background-color: grey;
+            
+            height: 70px;
+            background-color: darkgray;
+            margin-top: 8px;
+            margin-bottom: 8px;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        #banner{         
-            height: 100vh;
-            background-color: lightblue;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #sec1{
-            display: flex;
-            text-align: center;
-        }
-
-        #sec1-elem1{
-            background-color: orange;
-            border-radius: 50%;
-            padding: 150px;
-            float: left;
-        }
-
-        #sec1-elem2{
-            background-color: orange;
-            border-radius: 50%;
-            padding: 150px;
-            float: left;
-            margin-left: 100px;
-        }
-
-        #sec1-elem3{
-            background-color: orange;
-            border-radius: 50%;
-            padding: 150px;
-            float: left;
-            margin-left: 100px;
-        }
-
-        #sec1-elem4{
-            background-color: orange;
-            border-radius: 50%;
-            padding: 150px;
-            float: left;
-            margin-left: 100px;
-        }
-
-        #sec2{
-            display: flex;
-            height: 100vh;
-        }
-
-        #left{
-            width: 49%;
-            margin-right: 1%;
-
-        }
-
-        #right{
-            width: 50%;
-            float: right;
-        }
-
-
-        #sec2-elem1{
-            background-color: grey;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #sec2-elem2{
-            background-color: rgb(57, 214, 253);
-            width: 100%;
-            height: 33%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #sec2-elem3{
-            background-color: rgb(57, 214, 253);
-            width: 100%;
-            height: 32%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #sec2-elem4{
-            background-color: rgb(57, 214, 253);
-            width: 100%;
-            height: 32%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-        #sec3{
-            display: flex;
-            height: 50vh;
+            
             
         }
+        #banner{
+           
+            height: 100vh;
+            background-color: skyblue;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #sect1{
+            
+            
+            margin-bottom: 8px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+        #c1{
+            order: 1;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: peru;
+            margin-right: 15px;
+        }
+        #c2{
+            order: 2;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: peru;
+            margin-right: 15px;
+        }
+        #c3{
+            order: 3;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: peru;
+            margin-right: 15px;
+        }
+        #c4{
+            order: 4;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: peru;
+            
+        }
+        #sect2{
+            
+            height: 100vh;
+            margin-bottom: 8px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #sect2::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
 
-        #sec3-elem1{
-            background-color: orangered;
-            padding: 150px;
+        #left-side{
+            order:1;
+            width: 49.5%;
             float: left;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+
         }
-
-        #sec3-elem2{
-            background-color: orangered;
-            padding: 150px;
-            float: left;
-            margin-left: 100px;
+        #right-side{
+            order: 2;
+            width: 49.5%;
+            float: right;
+            display: flex;
+            flex-direction: column;
         }
+        #art1{
+            order: 1;
+            background-color: goldenrod;
+            height: 32.33%;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        #sec3-elem3{
-            background-color: orangered;
-            padding: 150px;
-            float: left;    
-            margin-left: 100px;
         }
+        #art2{
+            order: 2;
+            background-color: goldenrod;
+            height: 32.33%;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        #sec3-elem4{
-            background-color: orangered;
-            padding: 150px;
-            float: left;
-            margin-left: 100px;
         }
-
-
-        #footer{
-            padding: 30px;
-            background-color: violet;
+        #art3{
+            order: 3;
+            background-color: goldenrod;
+            height: 32.33%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        h3{
-            clear: left;
-            text-align: center;
-            color: black;
+        #sect3{
+            
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 8px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #box1{
+            order: 1;
+            width: 300px;
+            height: 480px;
+            margin-right: 15px;
+            background-color:lightgreen;
+            
+        }
+        #box2{
+            order: 2;
+            width: 300px;
+            height: 480px;
+            margin-right: 15px;
+            background-color: lightgreen;
         }
 
-        div{
-            margin-top: 10px;
-            margin-bottom: 10px;
+        #box3{
+            order: 3;
+            width: 300px;
+            height: 480px;
+            margin-right: 15px;
+            background-color: lightgreen;
         }
+        #box4{
+            order: 4;
+            width: 300px;
+            height: 480px;
+            background-color: lightgreen;
+        }
+        #footer{
+            
+            height: 70px;
+            background-color: violet;
+            
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h3{
+            text-align: center;
+            color: black;
+            font-size: xx-large;
+        }
+
     </style>
 </head>
 <body>
-    <div id="header">HEADER</div>
-    <div id="banner">BANNER</div>
-    <h3>Section - 1</h3>
-    <div id="sec1">
-        <div id="sec1-elem1"></div>
-        <div id="sec1-elem2"></div>
-        <div id="sec1-elem3"></div>
-        <div id="sec1-elem4"></div>
-    </div>
-    <h3>Section - 2</h3>
-    <div id="sec2">
-        <div id="left">
-            <div id="sec2-elem1">Main Content</div>
+    <div class="container">
+        <div id="header">Header</div>
+        <div id="banner">Banner</div>
+        <h3>Section-1</h3>
+        <div id="sect1">
+            
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+            <div id="c4"></div>
         </div>
-        <div id="right">
-            <div id="sec2-elem2">Artical1</div>
-            <div id="sec2-elem3">Artical2</div>
-            <div id="sec2-elem4">Artical3</div>
+        <h3>Section-2</h3>
+        <div id="sect2">
+            
+            <div id="left-side">Main Content</div>
+            <div id="right-side">
+                <div id="art1">Article-1</div>
+                <div id="art2">Article-2</div>
+                <div id="art3">Article-3</div>
+            </div>
         </div>
+        <h3>Section-3</h3>
+        <div id="sect3">
+            
+            <div id="box1"></div>
+            <div id="box2"></div>
+            <div id="box3"></div>
+            <div id="box4"></div>
+        </div>
+        <h3 style="text-align: center;">Section-4</h3>
+        <div id="footer">Footer</div>
+
     </div>
-    <h3>Section - 3</h3>
-    <div id="sec3">
-        <div id="sec3-elem1"></div>
-        <div id="sec3-elem2"></div>
-        <div id="sec3-elem3"></div>
-        <div id="sec3-elem4"></div>
-    </div>
-    <h3>Section - 4</h3>
-    <div id="footer">FOOTER</div>
 </body>
 </html>
